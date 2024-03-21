@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-primary;
+  @apply text-tertiary_dark;
+
+  /* dark mode */
+  @apply dark:bg-primary_dark;
+  @apply dark:text-white;
+}
