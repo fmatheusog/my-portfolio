@@ -5,6 +5,9 @@ import { Roboto_Slab } from 'next/font/google';
 
 import '../../styles/globals.css';
 
+// ## components ##
+import Header from '@/components/header/Header';
+
 const robotoSlab = Roboto_Slab({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -20,10 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${robotoSlab.className}`}>
-        <ThemeProvider
-          attribute="class"
-          forcedTheme="light"
-        >
+        <ThemeProvider attribute="class">
+          <Header />
           {children}
         </ThemeProvider>
       </body>

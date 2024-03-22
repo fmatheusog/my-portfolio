@@ -21,6 +21,7 @@ const config: Config = {
       tertiary_dark: '#3A506B',
       verdigris: '#5BC0BE',
       white: '#FFFFFF',
+      black: '#000000',
     },
     extend: {},
   },
